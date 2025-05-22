@@ -1,8 +1,10 @@
 terraform {
   backend "s3" {
-    bucket = "pterraformbuck"
+    bucket = "newbuckfromdyno"
     key = "terraform.tfstate"
     region = "us-east-1"
+    dynamodb_table = "lockstatedyno"
+    encrypt = true
     
   }
 }
