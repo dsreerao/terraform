@@ -4,6 +4,6 @@ resource "aws_instance" "name" {
     key_name = "tfk"
     availability_zone = "us-east-1a" 
     tags = {
-        Name = "windows"
+        Name = "new"
     }
 }
