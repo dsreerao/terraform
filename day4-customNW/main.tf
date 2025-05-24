@@ -66,7 +66,6 @@ resource "aws_route_table" "privatert" {
     cidr_block     = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.natdev.id
   }
-
 }
 #subnet associate to private route table
 resource "aws_route_table_association" "privateass" {
